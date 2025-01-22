@@ -29,7 +29,11 @@ body, html {
     height: 400px;
     z-index: 2;
     transition: transform 1s ease-in-out;
+    background-color: #ffffff;
+    border: 10px solid #b0b0b0; /* Soft border, like a photo border */
+    background: url('./assets/denim.png') repeat; /* Add a subtle noise pattern */
   }
+
   
   .newspaper img {
     width: 100%;
@@ -38,20 +42,16 @@ body, html {
   }
   
   .content {
+    background-color: white;
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: white;
+    color: #000000;
   }
 
   .thread {
     position: absolute;
-    z-index: 3; /* Behind the newspapers */
-    top: 0; /* Ensure it's at the top of the page */
-    left: 0; /* Ensure it's aligned to the left */
-    width: 100%; /* Make sure it covers the full width of the page */
-    height: 100%; /* Make sure it covers the full height of the page */
-    pointer-events: none; /* Disables mouse interaction */
+    z-index: 3; 
   }
   
   /* Newspaper positions will be set by inline styles (top, left) */
